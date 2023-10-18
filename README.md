@@ -1,10 +1,10 @@
-# FedHEONN - Federated Homomorphic Encryption Optimized Neural Networks
+# Federated Learning with Homomorphic Encryption Optimized Neural Networks
 
 ## Overview
 
-FedHEONN is a federated learning framework that enables training neural networks in a privacy-preserving and secure manner. It uses homomorphic encryption to allow multiple clients to collaborate and improve the accuracy of neural network models without sharing their raw data.
+This framework enables federated learning with privacy-preserving and secure neural network training. It leverages homomorphic encryption to allow multiple clients to collaborate and enhance the accuracy of neural network models without sharing their raw data.
 
-This README provides an overview of the FedHEONN Python library, including its components, usage, and examples. Additionally, it includes information on the code example provided in the repository.
+This README provides an overview of the Python library, including its components, usage, and examples. Additionally, it includes information on the code example provided in the repository.
 
 ## Table of Contents
 
@@ -19,7 +19,7 @@ This README provides an overview of the FedHEONN Python library, including its c
 
 ## Introduction
 
-FedHEONN stands for "Federated Homomorphic Encryption Optimized Neural Networks." It provides a federated learning framework for both classification and regression tasks. The framework consists of two main components:
+The framework provides a federated learning solution for both classification and regression tasks. It consists of two main components:
 
 1. **Client**: Clients are responsible for training models locally on their data. They support different activation functions (e.g., sigmoid, ReLU, linear) and can be configured to use homomorphic encryption for privacy.
 
@@ -41,7 +41,7 @@ The library is highly customizable and can be adapted to various use cases, incl
 
 ## Installation
 
-To install FedHEONN, follow these steps:
+To install the framework, follow these steps:
 
 1. Clone the repository from GitHub.
 2. Install the required dependencies using pip or conda.
@@ -53,14 +53,14 @@ Detailed usage instructions for both the client and coordinator components are a
 
 ### Client
 
-- Create a FedHEONN client with activation function and encryption options.
+- Create a client with activation function and encryption options.
 - Fit the client's model with local data.
 - Provide the aggregated models to the coordinator for federated learning.
 - Use the model to make predictions.
 
 ### Coordinator
 
-- Create a FedHEONN coordinator with activation function and regularization options.
+- Create a coordinator with activation function and regularization options.
 - Aggregate models from multiple clients using federated learning.
 - Provide the aggregated global model to clients.
 - Clients can use the received global model for predictions.
@@ -69,15 +69,14 @@ Detailed usage instructions for both the client and coordinator components are a
 
 ### Carbon Nanotubes Regression
 
-The repository includes a code example for using FedHEONN to perform federated regression on a Carbon Nanotubes dataset. It demonstrates how to train models across multiple clients, aggregate them, and evaluate their performance.
+The repository includes a code example for using the framework to perform federated regression on a Carbon Nanotubes dataset. It demonstrates how to train models across multiple clients, aggregate them, and evaluate their performance.
 
 ### Dry Bean Classification
 
-Another code example in the repository focuses on Dry Bean classification, showing how to use FedHEONN for federated classification tasks.
+Another code example in the repository focuses on Dry Bean classification, showing how to use the framework for federated classification tasks.
 
 ## License
 
 This project is licensed under the [GPL-3.0 License](LICENSE).
-
 
 
