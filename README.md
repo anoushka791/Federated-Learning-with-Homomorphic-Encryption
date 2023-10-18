@@ -1,2 +1,81 @@
-# Federated-Learning-with-Homomorphic-Encryption
-A novel approach called FedHEONN combines federated learning (FL) and homomorphic encryption (HE) for one-layer neural networks. Unlike conventional FL methods that necessitate multiple training rounds for convergence, our method achieves a collaborative global model in just one training round. This results in an efficient and effective model, simplifying the FL training process. Moreover, the inclusion of homomorphic encryption in our approach enhances its resilience against model inversion attacks.
+# FedHEONN - Federated Homomorphic Encryption Optimized Neural Networks
+
+## Overview
+
+FedHEONN is a federated learning framework that enables training neural networks in a privacy-preserving and secure manner. It uses homomorphic encryption to allow multiple clients to collaborate and improve the accuracy of neural network models without sharing their raw data.
+
+This README provides an overview of the FedHEONN Python library, including its components, usage, and examples.
+
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Key Features](#key-features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Examples](#examples)
+- [License](#license)
+- [Authors](#authors)
+
+## Introduction
+
+FedHEONN stands for "Federated Homomorphic Encryption Optimized Neural Networks." It provides a federated learning framework for both classification and regression tasks. The framework consists of two main components:
+
+1. **Client**: Clients are responsible for training models locally on their data. They support different activation functions (e.g., sigmoid, ReLU, linear) and can be configured to use homomorphic encryption for privacy.
+
+2. **Coordinator**: The coordinator aggregates models from multiple clients and computes an optimized global model using federated learning. It supports L2 regularization and can use homomorphic encryption to protect the model's privacy.
+
+The library is highly customizable and can be adapted to various use cases, including classification and regression tasks. It also allows you to choose whether to use encryption and sparse matrices for optimization.
+
+## Key Features
+
+- **Privacy-Preserving Learning**: Clients can use homomorphic encryption to protect their data while contributing to model training.
+
+- **Customizable Activation Functions**: Clients can choose between logistic sigmoid, ReLU, and linear activation functions for their models.
+
+- **Sparse Matrices**: Supports the use of sparse matrices for improved performance on large datasets.
+
+- **Federated Learning**: Enables federated learning, where multiple clients collaborate to create a global model without sharing their data directly.
+
+- **Regularization**: The coordinator supports L2 regularization to improve model generalization.
+
+## Installation
+
+To install FedHEONN, follow these steps:
+
+1. Clone the repository from GitHub.
+2. Install the required dependencies using pip or conda.
+3. Start using the library in your projects.
+
+## Usage
+
+Detailed usage instructions for both the client and coordinator components are available in the code's documentation. Below is a high-level overview:
+
+### Client
+
+- Create a FedHEONN client with activation function and encryption options.
+- Fit the client's model with local data.
+- Provide the aggregated models to the coordinator for federated learning.
+- Use the model to make predictions.
+
+### Coordinator
+
+- Create a FedHEONN coordinator with activation function and regularization options.
+- Aggregate models from multiple clients using federated learning.
+- Provide the aggregated global model to clients.
+- Clients can use the received global model for predictions.
+
+## Examples
+
+Example use cases and code for classification and regression tasks are provided in the code. Refer to the examples for guidance on how to use the FedHEONN library in your projects.
+
+## License
+
+This project is licensed under the [GPL-3.0 License](LICENSE).
+
+## Authors
+
+- [Author Name](mailto:author@example.com)
+
+Feel free to contribute to this project, report issues, and suggest improvements. Your contributions are valuable to the open-source community.
+
+
