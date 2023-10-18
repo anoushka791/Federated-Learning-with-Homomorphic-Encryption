@@ -4,7 +4,7 @@
 
 FedHEONN is a federated learning framework that enables training neural networks in a privacy-preserving and secure manner. It uses homomorphic encryption to allow multiple clients to collaborate and improve the accuracy of neural network models without sharing their raw data.
 
-This README provides an overview of the FedHEONN Python library, including its components, usage, and examples.
+This README provides an overview of the FedHEONN Python library, including its components, usage, and examples. Additionally, it includes information on the code example provided in the repository.
 
 ## Table of Contents
 
@@ -13,6 +13,7 @@ This README provides an overview of the FedHEONN Python library, including its c
 - [Installation](#installation)
 - [Usage](#usage)
 - [Examples](#examples)
+- [Code Examples](#code-examples)
 - [License](#license)
 - [Authors](#authors)
 
@@ -64,18 +65,19 @@ Detailed usage instructions for both the client and coordinator components are a
 - Provide the aggregated global model to clients.
 - Clients can use the received global model for predictions.
 
-## Examples
+## Code Examples
 
-Example use cases and code for classification and regression tasks are provided in the code. Refer to the examples for guidance on how to use the FedHEONN library in your projects.
+### Carbon Nanotubes Regression
+
+The repository includes a code example for using FedHEONN to perform federated regression on a Carbon Nanotubes dataset. It demonstrates how to train models across multiple clients, aggregate them, and evaluate their performance.
+
+### Dry Bean Classification
+
+Another code example in the repository focuses on Dry Bean classification, showing how to use FedHEONN for federated classification tasks.
 
 ## License
 
 This project is licensed under the [GPL-3.0 License](LICENSE).
 
-## Authors
-
-- [Author Name](mailto:author@example.com)
-
-Feel free to contribute to this project, report issues, and suggest improvements. Your contributions are valuable to the open-source community.
 
 
