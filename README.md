@@ -75,8 +75,5 @@ The repository includes a code example for using the framework to perform federa
 
 Another code example in the repository focuses on Dry Bean classification, showing how to use the framework for federated classification tasks.
 
-## License
-
-This project is licensed under the [GPL-3.0 License](LICENSE).
 
 
